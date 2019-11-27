@@ -122,6 +122,60 @@ MyGame/fast:
 	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/build
 .PHONY : MyGame/fast
 
+Game.obj: Game.cpp.obj
+
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+StartGame.obj: StartGame.cpp.obj
+
+.PHONY : StartGame.obj
+
+# target to build an object file
+StartGame.cpp.obj:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/StartGame.cpp.obj
+.PHONY : StartGame.cpp.obj
+
+StartGame.i: StartGame.cpp.i
+
+.PHONY : StartGame.i
+
+# target to preprocess a source file
+StartGame.cpp.i:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/StartGame.cpp.i
+.PHONY : StartGame.cpp.i
+
+StartGame.s: StartGame.cpp.s
+
+.PHONY : StartGame.s
+
+# target to generate assembly for a file
+StartGame.cpp.s:
+	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/StartGame.cpp.s
+.PHONY : StartGame.cpp.s
+
 game_cpp/moveUp.obj: game_cpp/moveUp.cpp.obj
 
 .PHONY : game_cpp/moveUp.obj
@@ -185,6 +239,12 @@ help:
 	@echo ... MyGame
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
+	@echo ... StartGame.obj
+	@echo ... StartGame.i
+	@echo ... StartGame.s
 	@echo ... game_cpp/moveUp.obj
 	@echo ... game_cpp/moveUp.i
 	@echo ... game_cpp/moveUp.s

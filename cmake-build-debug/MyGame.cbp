@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/C++project/MyGame/Game.cpp">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="D:/C++project/MyGame/Game.h">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="D:/C++project/MyGame/StartGame.cpp">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="D:/C++project/MyGame/StartGame.h">
+			<Option target="MyGame"/>
+		</Unit>
 		<Unit filename="D:/C++project/MyGame/game cpp/moveUp.cpp">
 			<Option target="MyGame"/>
 		</Unit>

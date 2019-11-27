@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/C++project/MyGame/Game.cpp" "D:/C++project/MyGame/cmake-build-debug/CMakeFiles/MyGame.dir/Game.cpp.obj"
+  "D:/C++project/MyGame/StartGame.cpp" "D:/C++project/MyGame/cmake-build-debug/CMakeFiles/MyGame.dir/StartGame.cpp.obj"
   "D:/C++project/MyGame/game cpp/moveUp.cpp" "D:/C++project/MyGame/cmake-build-debug/CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.obj"
   "D:/C++project/MyGame/main.cpp" "D:/C++project/MyGame/cmake-build-debug/CMakeFiles/MyGame.dir/main.cpp.obj"
   )

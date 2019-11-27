@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/C++project/MyGame/game hpp/moveUp.h
-
-D:/C++project/MyGame/main.cpp
+D:/C++project/MyGame/Game.h
 iostream
 -
 iomanip
 -
 windows.h
 D:/C++project/MyGame/windows.h
-game hpp/moveUp.h
-D:/C++project/MyGame/game hpp/moveUp.h
+
+D:/C++project/MyGame/StartGame.cpp
+StartGame.h
+D:/C++project/MyGame/StartGame.h
+
+D:/C++project/MyGame/StartGame.h
+Game.h
+D:/C++project/MyGame/Game.h
 
