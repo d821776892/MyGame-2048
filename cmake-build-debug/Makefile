@@ -176,33 +176,6 @@ StartGame.cpp.s:
 	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/StartGame.cpp.s
 .PHONY : StartGame.cpp.s
 
-game_cpp/moveUp.obj: game_cpp/moveUp.cpp.obj
-
-.PHONY : game_cpp/moveUp.obj
-
-# target to build an object file
-game_cpp/moveUp.cpp.obj:
-	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.obj
-.PHONY : game_cpp/moveUp.cpp.obj
-
-game_cpp/moveUp.i: game_cpp/moveUp.cpp.i
-
-.PHONY : game_cpp/moveUp.i
-
-# target to preprocess a source file
-game_cpp/moveUp.cpp.i:
-	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.i
-.PHONY : game_cpp/moveUp.cpp.i
-
-game_cpp/moveUp.s: game_cpp/moveUp.cpp.s
-
-.PHONY : game_cpp/moveUp.s
-
-# target to generate assembly for a file
-game_cpp/moveUp.cpp.s:
-	$(MAKE) -f CMakeFiles\MyGame.dir\build.make CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.s
-.PHONY : game_cpp/moveUp.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -245,9 +218,6 @@ help:
 	@echo ... StartGame.obj
 	@echo ... StartGame.i
 	@echo ... StartGame.s
-	@echo ... game_cpp/moveUp.obj
-	@echo ... game_cpp/moveUp.i
-	@echo ... game_cpp/moveUp.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

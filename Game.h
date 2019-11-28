@@ -10,17 +10,19 @@
 using namespace std;
 class Game {
 public:
+  void setSize(const int size_);
   void Draw(ostream &os, std::string f);
   void Draw(ostream &os);
   void move ();
-  bool isFully();
   bool generate();
   void init();
   int getScore();
 private:
-  int array1[4][4];
+  int array1[10][10];
   int score;
   int x,y;
+  int size;
+  bool isFully();
   void addScore(int score_);
   void moveUp();
   void moveDown();

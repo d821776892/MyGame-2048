@@ -4,9 +4,9 @@
 #include "Game.h"
 
 void Game::moveUp() {
-  for (int k = 0; k < 4; ++k) {
-    for (int i = 0; i < 4; ++i) {
-      for (int j = i + 1; j < 4; ++j) {
+  for (int k = 0; k < size; ++k) {
+    for (int i = 0; i < size; ++i) {
+      for (int j = i + 1; j < size; ++j) {
         if (array1[i][k]==0) {
           array1[i][k] = array1[j][k];
           array1[j][k] = 0;
@@ -24,8 +24,8 @@ void Game::moveUp() {
 
 
 void Game::moveDown() {
-  for (int k = 0; k < 4; ++k) {
-    for (int i = 3; i >= 0; --i) {
+  for (int k = 0; k < size; ++k) {
+    for (int i = size - 1; i >= 0; --i) {
       for (int j = i - 1; j >= 0 ; --j) {
         if (array1[i][k]==0) {
           array1[i][k] = array1[j][k];
@@ -43,8 +43,8 @@ void Game::moveDown() {
 }
 
 void Game::moveRight() {
-  for (int k = 0; k < 4; ++k) {
-    for (int i = 3; i >= 0; --i) {
+  for (int k = 0; k < size; ++k) {
+    for (int i = size - 1; i >= 0; --i) {
       for (int j = i - 1; j >= 0 ; --j) {
         if (array1[k][i]==0) {
           array1[k][i] = array1[k][j];
@@ -62,9 +62,9 @@ void Game::moveRight() {
 }
 
 void Game::moveLeft() {
-  for (int k = 0; k < 4; ++k) {
-    for (int i = 0; i < 4; ++i) {
-      for (int j = i + 1; j < 4; ++j) {
+  for (int k = 0; k < size; ++k) {
+    for (int i = 0; i < size; ++i) {
+      for (int j = i + 1; j < size; ++j) {
         if (array1[k][i]==0) {
           array1[k][i] = array1[k][j];
           array1[k][j] = 0;
@@ -83,11 +83,11 @@ void Game::moveLeft() {
 bool Game::generate() {
   if (isFully())
     return false;
-  x = rand() % 4;
-  y = rand() % 4;
+  x = rand() % size;
+  y = rand() % size;
   while (array1[x][y] != 0) {
-    x = rand() % 4;
-    y = rand() % 4;
+    x = rand() % size;
+    y = rand() % size;
   }
   array1[x][y] = 2;
   return true;
@@ -130,8 +130,8 @@ void Game::Draw(ostream &os) {
   cout << "===================================================================================" << endl;
   SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
   cout << "your score:" << getScore() << endl;
-  for (int i = 0; i < 4; ++i) {
-    for (int j = 0; j < 4; ++j) {
+  for (int i = 0; i < size; ++i) {
+    for (int j = 0; j < size; ++j) {
       SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED);
       if (i == x && j == y)
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN|FOREGROUND_RED);
@@ -147,8 +147,8 @@ void Game::Draw(ostream &os, std::string f) {
 }
 
 bool Game::isFully() {
-  for (int i = 0; i < 4; ++i) {
-    for (int j = 0; j < 4; ++j) {
+  for (int i = 0; i < size; ++i) {
+    for (int j = 0; j < size; ++j) {
       if (array1[i][j]==0)
         return false;
     }
@@ -157,8 +157,8 @@ bool Game::isFully() {
 }
 
 void Game::init() {
-  for (int i = 0; i < 4; ++i) {
-    for (int j = 0; j < 4; ++j) {
+  for (int i = 0; i < size; ++i) {
+    for (int j = 0; j < size; ++j) {
       array1[i][j] = 0;
     }
   }
@@ -171,4 +171,8 @@ int Game::getScore() {
 
 void Game::addScore(int score_) {
   score += score_;
+}
+
+void Game::setSize(const int size_) {
+  size = size_;
 }

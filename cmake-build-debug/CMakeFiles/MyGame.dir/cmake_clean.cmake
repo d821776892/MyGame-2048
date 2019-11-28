@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyGame.dir/Game.cpp.obj"
   "CMakeFiles/MyGame.dir/StartGame.cpp.obj"
-  "CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.obj"
   "CMakeFiles/MyGame.dir/main.cpp.obj"
   "MyGame.exe"
   "MyGame.exe.manifest"

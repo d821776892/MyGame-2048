@@ -88,16 +88,13 @@
 		<Unit filename="D:/C++project/MyGame/Game.h">
 			<Option target="MyGame"/>
 		</Unit>
+		<Unit filename="D:/C++project/MyGame/Move/MoveBasic.h">
+			<Option target="MyGame"/>
+		</Unit>
 		<Unit filename="D:/C++project/MyGame/StartGame.cpp">
 			<Option target="MyGame"/>
 		</Unit>
 		<Unit filename="D:/C++project/MyGame/StartGame.h">
-			<Option target="MyGame"/>
-		</Unit>
-		<Unit filename="D:/C++project/MyGame/game cpp/moveUp.cpp">
-			<Option target="MyGame"/>
-		</Unit>
-		<Unit filename="D:/C++project/MyGame/game hpp/moveUp.h">
 			<Option target="MyGame"/>
 		</Unit>
 		<Unit filename="D:/C++project/MyGame/main.cpp">

@@ -8,8 +8,6 @@ CMakeFiles/MyGame.dir/StartGame.cpp.obj: ../Game.h
 CMakeFiles/MyGame.dir/StartGame.cpp.obj: ../StartGame.cpp
 CMakeFiles/MyGame.dir/StartGame.cpp.obj: ../StartGame.h
 
-CMakeFiles/MyGame.dir/game_cpp/moveUp.cpp.obj: ../game\ cpp/moveUp.cpp
-
 CMakeFiles/MyGame.dir/main.cpp.obj: ../Game.h
 CMakeFiles/MyGame.dir/main.cpp.obj: ../StartGame.h
 CMakeFiles/MyGame.dir/main.cpp.obj: ../main.cpp
